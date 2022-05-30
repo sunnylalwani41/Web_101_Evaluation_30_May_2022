@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit2 C2</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      button{
+        border-radius: 50px;
+        padding: 2% 4%;
+        margin: 5% 0%;
+      }
+      #main{
+        padding: 0% 5%;
+      }
+      #banner{
+        background-color: #252D7D;
+        display: flex;
+        justify-content: space-between;
+        color: white; 
+        flex-wrap: wrap;
+        padding: 0% 5%;
+        border-radius: 25px;
+        height: 0.5%;
+        
+        margin: auto;
+      }
+    #banner>div+div{
+        height: 320px;
+        width: auto;
+        display: flex;
+        justify-content: flex-end;
+      }
+      #banner>div+div>img{
+        height: 100%;
+        
+        display: block;
+      }
+      
+      #banner>div>h1{
+        margin-top: 25%;
+      }
+      #services{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(1, auto);
+        gap: 1%;
+        margin-bottom: 4%;
+      }
+      
+      #services>div{
+        margin-top: 13%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      #services>div>p{
+        margin-left: 10%;
+        margin-bottom: 8%;
+      }
+      #services>div>h3{
+        margin-left: 10%;
+      }
+      #services>div>img{
+        width: 100%;
+        margin-bottom: 10%;
+        background-color: #8cc1f0;
+      }
+      #works>h1, #works>p{
+        text-align: center;
+      }
+      #works>p{
+        text-align: center;
+        margin-bottom: 3%;
+      }
+      #works>div{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 1.5%;
+        margin-bottom: 2%;
+      }
+      #works>div>div>img{
+        width: 100%;
+      }
+      
+      #works>div>div>p{
+        margin-bottom: 7%;
+        margin-left: 1%;
+      }
+      #works>div>div>h3{
+        
+        margin-left: 1%;
+      }
+      #works>div>div{
+        margin-bottom: 7%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      /* Medium Screen */
+      @media only screen and (min-width: 500px) and (max-width: 768px) {
+
+        #banner{
+          flex-direction: column;
+        }
+        
+        #banner>div:last-child>img{
+          width: 100%;
+        }
+        #services{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 1%;
+        }
+        #works>div{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        }
+      }
+      
+
+      /* Small Screen */
+      @media only screen and (min-width: 320px) and (max-width: 499px) {
+          #banner{
+            flex-direction: column;
+          }
+          
+          #banner>div:last-child>img{
+            width: 100%;
+          }
+          #services{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(3, auto);
+          gap: 1%;
+        }
+        #works>div{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, auto);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="banner">
+        <!-- Here should be 2 divs one for the banner heading and button and the second is for banner image -->
+        <div>
+          <h1>You are in safe hands</h1>
+          <p>Choose the experts in end to end surgical care</p>
+          <button>know More</button>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/practo-care/1631634827/dweb_hero_banner.png" alt="">
+        </div>
+      </div>
+      <div id="services">
+        <!-- Here should be 6 divs. All of them should be in a single line for large screen. For medium and large screen refer to question statement -->
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
+          <h3>Instant Video Consultation</h3>
+          <p>Connect within 60 secs</p>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
+          <h3>Instant Video Consultation</h3>
+          <p>Connect within 60 secs</p>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
+          <h3>Instant Video Consultation</h3>
+          <p>Connect within 60 secs</p>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
+          <h3>Instant Video Consultation</h3>
+          <p>Connect within 60 secs</p>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
+          <h3>Instant Video Consultation</h3>
+          <p>Connect within 60 secs</p>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
+          <h3>Instant Video Consultation</h3>
+          <p>Connect within 60 secs</p>
+        </div>
+      </div>
+      <div id="works">
+        <h1>Book an appointment for an in-clinic consultation</h1>
+        <p>Find experienced doctors across all specialties</p>
+        <div>
+          <!-- Here should be 8 divs. They should be in 4 colums and two rows for large screen.For medium and large screen refer to question statement -->
+          <div>
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+            <p>Teething trouble? Schedule a dental Checkup</p>
+          </div>
+          <div>
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+            <p>Teething trouble? Schedule a dental Checkup</p>
+          </div>
+          <div>
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+            <p>Teething trouble? Schedule a dental Checkup</p>
+          </div>
+          <div>
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+            <p>Teething trouble? Schedule a dental Checkup</p>
+          </div>
+          <div>
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+            <p>Teething trouble? Schedule a dental Checkup</p>
+          </div>
+          <div>
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+            <p>Teething trouble? Schedule a dental Checkup</p>
+          </div>
+          <div>
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+            <p>Teething trouble? Schedule a dental Checkup</p>
+          </div>
+          <div>
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
+            <h3>Dentist</h3>
+            <p>Teething trouble? Schedule a dental Checkup</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
